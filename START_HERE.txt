@@ -1,17 +1,30 @@
-SCHOOL LIFE: 25 SPEAKING ACTIVITIES
+SCHOOL LIFE: 25 FOUR-SKILL ACTIVITIES (GRADES 9-12)
 
-1. Extract (unzip) this download.
-2. Upload the extracted index.html file to the main folder of your GitHub repository. Replace the previous index.html if you are updating this workbook.
-3. Keep its name exactly index.html (lowercase). Do not upload the ZIP itself as the website.
-4. In the repository's Settings > Pages, use Deploy from a branch. Select the branch containing index.html and the /(root) folder, then Save.
-5. Open the published website URL shown on the Pages settings screen. The repository file preview is not the website.
+UNZIP FIRST. Upload the extracted index.html to the main folder of your existing workbook repository, replacing its previous index.html. Do not upload the ZIP as the website. Keep the filename exactly index.html.
 
-All pictures and 25 activities are inside index.html. There are no image folders to upload and no build commands to run.
+All images, text, questions, and interactive code are inside that one HTML file. No build command or extra image folder is needed. Open your published GitHub Pages website, not the repository's code preview. If the old page is still displayed, refresh it.
 
-If the old version appears, refresh the published page. If a 404 remains, check the Pages branch/folder and filename.
+WHAT IS INCLUDED
+25 original reading passages with two questions and an evidence response each.
+25 original listening messages with two questions each.
+25 picture-based speaking tasks with planning and follow-up questions.
+25 writing prompts with planning, drafts, revision checks, and final responses.
+100 reading/listening questions with practice feedback and explanations.
+All 10 original lifelike images, bilingual vocabulary, save/restore, response reports, and printing.
 
-Students can also open index.html locally in a browser. Answers stay on that browser/device where storage is available. Use Download my work to back up responses and Download response report for a text file to submit. No responses are sent automatically to a teacher.
+LISTENING
+Play buttons use browser/device text-to-speech in English. This is synthesized narration, not recorded human audio. Available voices and offline playback vary by device; an internet connection may be required by a voice. Select a voice/speed under How to use + audio setup. Play one message at a time. Stop or change activities to stop it.
+Every message has a transcript that a teacher can read aloud if audio is unavailable. For listening practice, keep it closed during the first attempt. The scripts also appear when printing for teacher read-aloud use.
 
-All activities display even without JavaScript. Interactive navigation, saving, backup, and downloads require JavaScript.
+CLASSROOM USE
+Complete Read, Listen, Speak, and Write in each activity. Check each part's completion box. Speaking completion from an older backup does not mark the other skills finished. Answer feedback allows retries; it is not a secure assessment.
+Writing and speaking require teacher/partner feedback. Word counts and checklists are not ELPA21 proficiency scores. No student audio recording is included.
 
-GitHub guidance: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+SAVING AND SUBMISSION
+Work stays in the same browser/device where storage is available. Download my work saves a JSON backup for Restore saved work. Download response report creates a text report with all four-skill responses and objective practice results. Submit through your teacher's usual method. Nothing is sent to a teacher automatically.
+Older speaking-only backups can be restored. Save a current backup before replacing browser answers with an older backup.
+
+These are original ELPA21-style classroom materials, not official test items or a complete test simulation. The photographs are AI-generated.
+Framework references:
+https://elpa21.org/elp-standards/
+https://elpa21.org/summative/
