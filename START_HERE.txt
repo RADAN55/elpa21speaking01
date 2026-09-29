@@ -1,30 +1,95 @@
-SCHOOL LIFE: 25 FOUR-SKILL ACTIVITIES (GRADES 9-12)
+SCHOOL LIFE • LANGUAGE LAB
+25 original ELPA21-style activities • Grades 9–12
+UPDATED: word-choice writing, speaking recordings, and teacher collection
 
-UNZIP FIRST. Upload the extracted index.html to the main folder of your existing workbook repository, replacing its previous index.html. Do not upload the ZIP as the website. Keep the filename exactly index.html.
-
-All images, text, questions, and interactive code are inside that one HTML file. No build command or extra image folder is needed. Open your published GitHub Pages website, not the repository's code preview. If the old page is still displayed, refresh it.
+PUBLISH ON YOUR EXISTING GITHUB SITE
+1. Unzip this package.
+2. In the elpa21speaking01 repository, choose Add file > Upload files.
+3. Upload BOTH index.html and teacher.html into the same folder used by
+   your published workbook. Replace the old index.html. Commit the change.
+4. Open your published workbook after deployment finishes and refresh.
+   The header should say UPDATED EDITION • WRITING + RECORDING + SUBMISSIONS.
+5. Open Teacher collection dashboard from the workbook sidebar.
+Do not upload the ZIP as your website. GitHub must receive the extracted files.
 
 WHAT IS INCLUDED
-25 original reading passages with two questions and an evidence response each.
-25 original listening messages with two questions each.
-25 picture-based speaking tasks with planning and follow-up questions.
-25 writing prompts with planning, drafts, revision checks, and final responses.
-100 reading/listening questions with practice feedback and explanations.
-All 10 original lifelike images, bilingual vocabulary, save/restore, response reports, and printing.
+- All 25 existing reading, listening, speaking, and extended writing tasks.
+- Three original sentence dropdowns in each Writing section: 75 in total.
+- Word-choice feedback and explanations; students may revise and retry.
+- Record, Stop, playback, and audio download controls in each Speaking section.
+- Optional Vocaroo button and a field for the student's recording link.
+- Per-activity submission downloads with answers and the actual recorded audio.
+- Teacher dashboard: import files, review all answers, play audio, write feedback,
+  mark reviewed, export class CSV, and save/reopen a class review with audio.
 
-LISTENING
-Play buttons use browser/device text-to-speech in English. This is synthesized narration, not recorded human audio. Available voices and offline playback vary by device; an internet connection may be required by a voice. Select a voice/speed under How to use + audio setup. Play one message at a time. Stop or change activities to stop it.
-Every message has a transcript that a teacher can read aloud if audio is unavailable. For listening practice, keep it closed during the first attempt. The scripts also appear when printing for teacher read-aloud use.
+TEACHER: SET UP COLLECTION
+This is a static website. It does not have accounts or a server inbox.
+1. Make a file-upload assignment in your existing classroom platform (LMS).
+   The assignment must allow .json attachments. Each activity submission
+   contains both the answers and the student's in-page recording.
+2. Open the teacher dashboard and expand Set up your student submission link.
+3. Enter the published workbook URL and your assignment's upload-page URL.
+4. Press Make student link. Share the resulting link with your students.
+   Their workbook will now show Open teacher upload page in every activity.
+5. Students download their activity submission, open your assignment, and
+   attach the file there. Downloading alone does NOT submit anything.
+6. Download those attachments from your assignment. In the teacher dashboard,
+   select multiple student files to import them together.
+7. Open each row to hear the recording and review writing and other responses.
+8. Download class CSV for a spreadsheet of results and feedback. Save class
+   review to preserve imported recordings and feedback for another session.
+9. Reopen a saved class review through the same file picker.
 
-CLASSROOM USE
-Complete Read, Listen, Speak, and Write in each activity. Check each part's completion box. Speaking completion from an older backup does not mark the other skills finished. Answer feedback allows retries; it is not a secure assessment.
-Writing and speaking require teacher/partner feedback. Word counts and checklists are not ELPA21 proficiency scores. No student audio recording is included.
+If your platform blocks .json files, have students submit the text response
+report and separate audio download or Vocaroo link through that platform.
+Those separate files cannot be imported into the collection dashboard as a
+single submission; review them in your LMS instead.
 
-SAVING AND SUBMISSION
-Work stays in the same browser/device where storage is available. Download my work saves a JSON backup for Restore saved work. Download response report creates a text report with all four-skill responses and objective practice results. Submit through your teacher's usual method. Nothing is sent to a teacher automatically.
-Older speaking-only backups can be restored. Save a current backup before replacing browser answers with an older backup.
+STUDENT ROUTINE
+1. Enter your name and class before recording.
+2. Complete Reading, Listening, Speaking, and Writing, including word choices.
+3. Press Record, allow your microphone, speak, press Stop, and listen back.
+   Recording stops after three minutes (a classroom limit, not ELPA21 timing).
+4. Or, with your teacher's permission, open Vocaroo, record there, and paste
+   the share link into the Vocaroo field. It opens in a separate tab.
+5. At the bottom, press Download activity submission.
+6. Upload that .json file to your teacher's assignment. The workbook does not
+   automatically send it or verify that the teacher has received it.
 
-These are original ELPA21-style classroom materials, not official test items or a complete test simulation. The photographs are AI-generated.
-Framework references:
-https://elpa21.org/elp-standards/
-https://elpa21.org/summative/
+SAVING AND AUDIO
+- Text responses are saved in this browser when storage is available.
+- In-page recordings stay only while this page is open. Download your activity
+  submission or audio before refreshing or leaving. Recording again replaces
+  the previous recording for that activity after confirmation.
+- Download my work is a text-only backup. It does not include microphone audio.
+- A submission file includes only ONE activity, its responses, and its audio.
+- The teacher dashboard keeps its session in memory. Save class review before
+  leaving; the CSV alone does not contain playable audio.
+- Use Start a new student after downloading work when sharing a device.
+
+MICROPHONE TROUBLESHOOTING
+Use the published HTTPS workbook. Allow microphone access and check the device
+microphone. Browser, device, and school policies may restrict recording.
+If recording is unavailable, use teacher-approved Vocaroo or another school
+recording tool. Students can submit writing even without a recording; both
+student and teacher pages show when a recording is missing.
+Audio is stored in the format supported by the student's browser (such as
+WebM, MP4/M4A, or Ogg). If playback fails, download the audio and try a compatible
+player. Browser microphone capture was tested with simulated media APIs during
+construction; a real microphone on your school devices has not been tested.
+
+PRACTICE, NOT OFFICIAL TEST MATERIAL
+All questions are original ELPA21-style classroom practice. This workbook does
+not duplicate official ELPA21 test items or certify exact test appearance.
+Scores are current, retryable practice checks, not official proficiency levels.
+Student files can be edited, so they are not secure assessment records.
+Speaking and longer writing require teacher feedback.
+Framework: https://elpa21.org/elp-standards/
+Assessment overview: https://elpa21.org/summative/
+Recording API: https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder
+
+STUDENT INFORMATION
+Keep submissions in your teacher-managed classroom platform. Do not upload
+student answers, names, or recordings to the public GitHub repository.
+The workbook makes no automatic upload. Vocaroo is a separate service; opening
+and using it stores recordings according to that service's own operation.
