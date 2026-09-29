@@ -1,0 +1,17 @@
+SCHOOL LIFE: 25 SPEAKING ACTIVITIES
+
+1. Extract (unzip) this download.
+2. Upload the extracted index.html file to the main folder of your GitHub repository. Replace the previous index.html if you are updating this workbook.
+3. Keep its name exactly index.html (lowercase). Do not upload the ZIP itself as the website.
+4. In the repository's Settings > Pages, use Deploy from a branch. Select the branch containing index.html and the /(root) folder, then Save.
+5. Open the published website URL shown on the Pages settings screen. The repository file preview is not the website.
+
+All pictures and 25 activities are inside index.html. There are no image folders to upload and no build commands to run.
+
+If the old version appears, refresh the published page. If a 404 remains, check the Pages branch/folder and filename.
+
+Students can also open index.html locally in a browser. Answers stay on that browser/device where storage is available. Use Download my work to back up responses and Download response report for a text file to submit. No responses are sent automatically to a teacher.
+
+All activities display even without JavaScript. Interactive navigation, saving, backup, and downloads require JavaScript.
+
+GitHub guidance: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
