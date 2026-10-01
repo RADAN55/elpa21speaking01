@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EL Publishing — October 2026 · Issue Two</title>
+<meta name="description" content="A field atlas for the teacher who never planned to teach language. Sixteen plates on working with English learners in the general-education classroom.">
+<meta property="og:title" content="EL Publishing — The October Issue">
+<meta property="og:description" content="Sixteen plates for the teacher who never planned to teach language.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1E2761;--deep:#111740;--gold:#C9A227;--paper:#F5F0E6;--grey:#B9B3A4;--ink:#2A2E3C;--mid:#6B74A6;--dim:#8A92BF;--rule:#DDD6C6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#2A2E3C;color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:16px;line-height:1.6}
+.mono{font-family:"DM Mono",ui-monospace,monospace;letter-spacing:.06em;text-transform:uppercase;font-size:.68rem}
+/* ---------- chrome ---------- */
+.bar{position:sticky;top:0;z-index:50;background:var(--deep);border-bottom:2px solid var(--gold);display:flex;align-items:center;gap:14px;padding:10px 16px;color:var(--paper)}
+.bar .mono{color:var(--gold)}
+.bar .sp{flex:1}
+.bar button{background:none;border:1px solid var(--dim);color:var(--paper);font:inherit;font-size:.8rem;padding:6px 12px;border-radius:3px;cursor:pointer}
+.bar button:hover{border-color:var(--gold)}
+#toc{position:fixed;inset:0;background:rgba(17,23,64,.97);z-index:60;color:var(--paper);overflow:auto;padding:80px 20px 40px;display:none}
+#toc.open{display:block}
+#toc .grid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:6px 28px}
+#toc a{display:flex;gap:14px;align-items:baseline;color:var(--paper);text-decoration:none;padding:10px 0;border-bottom:1px solid #3A4478}
+#toc a:hover span.t{color:var(--gold)}
+#toc a .n{color:var(--gold);font-family:"DM Mono",monospace;font-size:.7rem;min-width:28px}
+#toc a .t{font-family:Fraunces,serif;font-size:1.15rem}
+#toc a .s{font-family:Fraunces,serif;font-style:italic;font-size:.85rem;color:var(--dim);display:block}
+#toc .close{position:fixed;top:12px;right:16px;background:none;border:1px solid var(--dim);color:var(--paper);font:inherit;padding:6px 12px;border-radius:3px;cursor:pointer}
+/* ---------- pages ---------- */
+.page{max-width:860px;margin:22px auto;background:var(--paper);padding:48px 44px 40px;position:relative;box-shadow:0 10px 40px rgba(0,0,0,.35)}
+.page.dark{background:var(--deep);color:var(--paper)}
+.page .hd{display:flex;justify-content:space-between;color:var(--grey);border-bottom:1px solid var(--rule);padding-bottom:8px;margin-bottom:34px}
+.page.dark .hd{color:var(--dim);border-color:#3A4478}
+.page .ft{display:flex;justify-content:space-between;color:var(--grey);border-top:1px solid var(--rule);padding-top:8px;margin-top:40px}
+.page.dark .ft{color:var(--dim);border-color:#3A4478}
+h1,h2,h3{font-family:Fraunces,serif;font-weight:700;line-height:1.05;margin:0;color:var(--navy);letter-spacing:-.01em}
+.page.dark h1,.page.dark h2{color:var(--paper)}
+h2{font-size:clamp(2rem,5vw,2.9rem)}
+.sub{font-family:Fraunces,serif;font-style:italic;font-weight:400;font-size:1.15rem;color:var(--ink);margin:8px 0 26px}
+.page.dark .sub{color:var(--paper)}
+.fig{margin:0 0 26px}
+.fig svg{width:100%;height:auto;display:block}
+.cap{color:var(--grey);margin-top:6px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+@media(max-width:620px){.cols{grid-template-columns:1fr}.page{padding:34px 18px 28px;margin:12px 8px}}
+.lab{color:var(--gold);font-weight:500;margin:0 0 8px}
+.lab.navy{color:var(--navy)}
+ul.n{list-style:none;padding:0;margin:0}
+ul.n li{position:relative;padding-left:16px;margin-bottom:9px;font-size:.93rem}
+ul.n li::before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--navy)}
+.try{border:1.5px solid var(--gold);border-left:6px solid var(--gold);padding:14px 18px;margin:26px 0 0;background:#FBF8F0}
+.try .lab{margin-bottom:6px}
+.try p{margin:0;font-family:Fraunces,serif;font-size:1.12rem;color:var(--navy);line-height:1.45}
+.serif{font-family:Fraunces,serif}
+.big{font-family:Fraunces,serif;font-size:1.25rem;color:var(--navy);line-height:1.4;margin:0 0 6px}
+.it{font-family:Fraunces,serif;font-style:italic}
+table{width:100%;border-collapse:collapse;font-size:.9rem}
+th{text-align:left;font-family:"DM Mono",monospace;font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);padding:8px 8px;border-bottom:1.5px solid var(--navy)}
+td{padding:10px 8px;border-bottom:1px solid var(--rule);vertical-align:top;font-family:Fraunces,serif;font-size:.98rem}
+td.f{font-family:"DM Mono",monospace;font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);white-space:nowrap}
+.qa{border-top:1px solid var(--rule);padding:18px 0 4px;margin-top:10px}
+.qa:first-of-type{border-top:0;margin-top:0}
+.qa .q{border-left:4px solid var(--gold);padding-left:12px;font-family:Fraunces,serif;font-size:1.25rem;color:var(--navy);margin:0 0 8px;line-height:1.35}
+.qa p{margin:0 0 4px;padding-left:16px;font-size:.93rem}
+.shelf{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:620px){.shelf{grid-template-columns:1fr}}
+.shelf .it2{border-left:4px solid var(--navy);padding:4px 0 4px 12px}
+.shelf .it2.live{border-color:var(--gold)}
+.shelf .t{font-family:Fraunces,serif;font-size:1.15rem;color:var(--navy);line-height:1.25;margin:0 0 4px}
+.shelf p{margin:0 0 6px;font-size:.88rem}
+.shelf a{font-family:"DM Mono",monospace;font-size:.68rem;color:var(--gold);text-decoration:none;word-break:break-all}
+.shelf a:hover{text-decoration:underline}
+.shelf .cat{font-family:"DM Mono",monospace;font-size:.68rem;color:var(--grey)}
+.pairs .row{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:10px 0;border-bottom:1px solid var(--rule)}
+.pairs .row div{font-family:Fraunces,serif;font-size:1.05rem}
+.pairs .row div:first-child{color:var(--navy)}
+.pairs .row div:last-child{font-style:italic}
+@media(max-width:520px){.pairs .row{grid-template-columns:1fr;gap:4px}}
+.readable{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+@media(max-width:640px){.readable{grid-template-columns:1fr}}
+.readable p{font-family:Fraunces,serif;font-size:1.05rem;line-height:1.55;margin:6px 0 0}
+.qs{counter-reset:q;margin-top:22px}
+.qs .q1{display:flex;gap:12px;margin-bottom:12px}
+.qs .q1 b{flex:none;width:22px;height:22px;background:var(--navy);color:var(--paper);font-family:"DM Mono",monospace;font-size:.7rem;display:flex;align-items:center;justify-content:center;margin-top:3px}
+.qs .q1 .t{font-family:Fraunces,serif;font-size:1.08rem;color:var(--navy)}
+.qs .q1 .g{font-size:.85rem;color:var(--ink)}
+.moves .m{display:grid;grid-template-columns:30px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--rule)}
+.moves .m b{width:26px;height:26px;background:var(--navy);color:var(--paper);font-family:"DM Mono",monospace;font-size:.72rem;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.moves .m.g b{background:var(--gold);color:var(--deep)}
+.moves .m .t{font-family:Fraunces,serif;font-size:1.25rem;color:var(--navy)}
+.moves .m p{margin:2px 0 0;font-size:.9rem}
+.stats{display:flex;gap:40px;border-top:1px solid var(--rule);padding-top:20px;margin-top:30px;flex-wrap:wrap}
+.stats div b{font-family:Fraunces,serif;font-size:2.4rem;font-weight:700;color:var(--navy);display:block;line-height:1}
+.stats div:nth-child(2) b{color:var(--gold)}
+.stats div span{color:var(--grey)}
+.letter p{font-family:Fraunces,serif;font-size:1.15rem;line-height:1.6;margin:0 0 16px}
+.sig{font-family:Fraunces,serif;font-style:italic;color:var(--navy);font-size:1.1rem}
+.cover{padding:0;overflow:hidden}
+.cover .in{padding:44px 44px 36px;background:var(--deep)}
+.cover .mast{display:flex;justify-content:space-between;color:var(--gold);border-bottom:1px solid var(--gold);padding-bottom:8px}
+.cover h1{font-size:clamp(4.2rem,15vw,9.5rem);font-weight:900;color:var(--paper);margin:12px 0 0 -4px;letter-spacing:-.03em}
+.cover .l2{display:flex;justify-content:space-between;color:var(--gold);flex-wrap:wrap;gap:8px}
+.cover .tag{font-family:Fraunces,serif;font-style:italic;color:var(--paper);font-size:1.25rem;border-top:1px solid #3A4478;padding-top:14px;margin-top:14px}
+.cover .l3{display:flex;justify-content:space-between;color:var(--dim);margin-top:18px;flex-wrap:wrap;gap:8px}
+@media(max-width:620px){.cover .in{padding:28px 18px}}
+.lanes4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px}
+@media(max-width:620px){.lanes4{grid-template-columns:1fr 1fr}}
+.lanes4 div .mono{color:var(--navy);display:block;margin-bottom:4px}
+.lanes4 div p{margin:0;font-size:.85rem}
+.tiers{display:flex;height:170px;gap:4px;margin-bottom:6px}
+.tiers div{padding:12px;color:var(--paper);display:flex;flex-direction:column;justify-content:space-between}
+.tiers .mono{color:inherit}
+.tiers .w{font-family:Fraunces,serif;font-size:.95rem;line-height:1.35}
+.split{display:flex;height:44px;margin-bottom:6px}
+.split div{display:flex;align-items:center;padding:0 12px;font-family:"DM Mono",monospace;font-size:.66rem;letter-spacing:.06em;text-transform:uppercase}
+.print{display:none}
+@media print{body{background:#fff}.bar,#toc{display:none}.page{box-shadow:none;margin:0;page-break-after:always;max-width:none}.print{display:block}}
+a.plain{color:var(--gold)}
+.back{text-align:center}
+.back .big2{font-family:Fraunces,serif;font-size:clamp(1.6rem,4.5vw,2.4rem);color:var(--paper);margin:26px 0 8px}
+.back .it{color:#B7BEE0;font-size:1.15rem}
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <span class="mono">EL Publishing · Issue Two</span>
+  <span class="sp"></span>
+  <span class="mono" style="color:var(--dim)">October 2026</span>
+  <button onclick="document.getElementById('toc').classList.add('open')">Contents</button>
+  <button onclick="window.print()">Print</button>
+</div>
+
+<div id="toc">
+  <button class="close" onclick="document.getElementById('toc').classList.remove('open')">Close</button>
+  <div class="grid" id="tocgrid"></div>
+</div>
+
+<!-- ================= COVER ================= -->
+<section class="page cover" id="cover">
+  <div class="in">
+    <div class="mast mono"><span>EL Publishing</span><span>Many Voices · One Storm</span></div>
+    <div class="fig" id="rain"></div>
+    <h1>October</h1>
+    <div class="l2 mono"><span>Twenty Twenty‑Six</span><span>Issue Two · Educator Edition</span></div>
+    <div class="tag">A field atlas for the teacher who never planned to teach language.</div>
+    <div class="l3 mono"><span>Laurel, Mississippi · radan55.github.io</span><span>Sixteen plates</span></div>
+  </div>
+</section>
+
+<!-- ================= FROM THE DESK ================= -->
+<section class="page" id="desk" data-n="—" data-t="From the Desk" data-s="Why a magazine, and why now.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>October 2026</span></div>
+  <h2>From the Desk</h2>
+  <p class="sub">Issue Two. The honeymoon month is over; the real year begins.</p>
+  <div class="letter">
+    <p>September is introductions. October is when the room settles into whatever it is going to be, and for an English learner that settling can go two ways. Either the class becomes a place with predictable routines, visible language, and a teacher who waits — or it becomes a place to disappear quietly into the back row for nine months.</p>
+    <p>This issue is about the first kind of room. Sixteen plates, each one a single idea you can carry into fourth period tomorrow: how to read silence, how to grade content without grading English, what a word problem is really asking, what to say to a family across a conference table when you do not share a language.</p>
+    <p>None of it requires a second language. All of it requires the belief that the student in front of you is already thinking in full sentences — just not yet in yours.</p>
+    <p>Every teacher is a language teacher. This is the field manual.</p>
+    <div class="sig">— R. A. Daniel, M.Ed.</div>
+    <div class="mono" style="color:var(--grey)">ENL / EL Specialist · Laurel High School · Laurel, Mississippi</div>
+  </div>
+  <div class="stats"><div><b>16</b><span class="mono">plates in this issue</span></div><div><b>4</b><span class="mono">lanes in every room</span></div><div><b>5</b><span class="mono">minutes on Monday</span></div></div>
+  <div class="ft mono"><span>From the desk</span><span>02</span></div>
+</section>
+
+<!-- ================= I SILENT PERIOD ================= -->
+<section class="page" id="silent" data-n="I" data-t="The Silent Period" data-s="Listening is not nothing.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>Plate I</span></div>
+  <h2>The Silent Period</h2>
+  <p class="sub">Listening is not nothing. It is the first reading.</p>
+  <div class="fig" id="dots"></div>
+  <div class="cap mono">Day 01 → Day 90 · hollow: silent · filled: producing · gold: first sentence</div>
+  <div class="cols" style="margin-top:22px">
+    <div><div class="lab mono">What it is</div><ul class="n">
+      <li>A normal stage, not a deficit. Newcomers may produce almost no English for weeks or months while comprehension grows daily.</li>
+      <li>Length varies with age, prior schooling, personality, and how safe the room feels. Older students are often quieter longer — the stakes of being wrong feel higher.</li>
+      <li>The student is working: mapping your routines, your gestures, the sound of instructions, who to copy.</li></ul></div>
+    <div><div class="lab mono">What to do</div><ul class="n">
+      <li>Accept non‑verbal answers: point, sort, match, draw, thumbs, choose between two cards.</li>
+      <li>Narrate what you do in short, repeated phrases. Same words for the same actions, every day.</li>
+      <li>Seat them beside a patient peer, ideally one who shares a language. Ask nothing publicly until they volunteer.</li>
+      <li>When the first sentence comes, answer the meaning — not the grammar.</li></ul></div>
+  </div>
+  <div class="try"><div class="lab mono">Try Tuesday</div><p>Give every direction three ways this week — say it, show it, write it on the board. Count how many times a silent student does the right thing without a word.</p></div>
+  <div class="ft mono"><span>Krashen, comprehensible input · ELPA21 Level 1 · Storm Studio Newcomer lane</span><span>03</span></div>
+</section>
+
+<!-- ================= II FOUR LANES ================= -->
+<section class="page" id="lanes" data-n="II" data-t="Four Lanes" data-s="One room, four altitudes, one destination.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>Plate II</span></div>
+  <h2>Four Lanes</h2>
+  <p class="sub">One room. Four altitudes. The same destination.</p>
+  <div class="fig" id="lanesfig"></div>
+  <div class="lab mono">One task, four ways · “Explain why the colonists were angry about the Stamp Act.”</div>
+  <div class="lanes4">
+    <div><span class="mono">Newcomer</span><p>Match 4 pictures to 4 words: tax, king, paper, angry. Circle the angry face. Say one word.</p></div>
+    <div><span class="mono">Emerging</span><p>Frame: “The colonists were angry because the king ___.” Word bank of five verbs. Two sentences.</p></div>
+    <div><span class="mono">Progressing</span><p>Frame: “Although ___, the colonists felt ___ because ___.” One paragraph with two reasons and one quote.</p></div>
+    <div><span class="mono">Challenge</span><p>No frame. Compare the Stamp Act to one modern tax dispute in a paragraph; cite the text twice.</p></div>
+  </div>
+  <div class="lab mono" style="margin-top:24px">The rules of the model</div>
+  <ul class="n">
+    <li>Same text, same standard, same objective on the board. What changes is the scaffold and the size of the output — never the thinking.</li>
+    <li>Lanes are not seats. A student can be Progressing in reading and Emerging in writing on the same day. Assign by task, not by label.</li>
+    <li>Scaffolds thin as the lane rises: pictures → word bank → frame → no frame. The horizon never moves.</li>
+  </ul>
+  <div class="ft mono"><span>Storm Studio · four‑lane differentiation model · ELPA21 bands</span><span>04</span></div>
+</section>
+
+<!-- ================= III FOUR DOMAINS ================= -->
+<section class="page" id="domains" data-n="III" data-t="The Four Domains" data-s="What ELPA21 actually measures — in your room.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>Plate III</span></div>
+  <h2>The Four Domains</h2>
+  <p class="sub">What ELPA21 actually measures — and what each one looks like in your room.</p>
+  <div class="fig" id="radar" style="max-width:420px;margin:0 auto 10px"></div>
+  <div class="cap mono" style="text-align:center">A typical year‑two profile: receptive domains run ahead of productive ones</div>
+  <div class="cols" style="margin-top:22px">
+    <div><div class="lab mono">Receptive — what they take in</div><ul class="n">
+      <li><b>Listening:</b> following multi‑step directions, catching the main idea of a mini‑lecture, hearing the difference between “can” and “can’t.” Support: slow down, chunk, repeat key phrases verbatim.</li>
+      <li><b>Reading:</b> vocabulary in context, text structure, inference. Support: preview headings and pictures, pre‑teach five words, read the first paragraph aloud.</li></ul></div>
+    <div><div class="lab mono">Productive — what they put out</div><ul class="n">
+      <li><b>Speaking:</b> usually the lowest and most public score. Support: partner before whole‑class, frames, wait time, accept accented and imperfect answers as correct answers.</li>
+      <li><b>Writing:</b> sentence control, organization, academic word choice. Support: model the paragraph, give the frame, grade the idea first and the grammar second.</li></ul></div>
+  </div>
+  <div class="try"><div class="lab mono">Read the profile</div><p>Ask your EL specialist for each student’s four domain scores, not just the overall level. A 4‑4‑2‑2 student needs a different Tuesday than a 3‑3‑3‑3 student.</p></div>
+  <div class="ft mono"><span>ELPA21 summative · Levels 1–5 per domain · MS ELP Standards</span><span>05</span></div>
+</section>
+
+<!-- ================= IV MONDAY MOVES ================= -->
+<section class="page" id="moves" data-n="IV" data-t="Monday Moves" data-s="Five moves, five minutes, every week.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>Plate IV</span></div>
+  <h2>Monday Moves</h2>
+  <p class="sub">Five moves. Five minutes. Every Monday of the year.</p>
+  <div class="fig" id="weeks"></div>
+  <div class="cap mono">Aug → May · navy: done · gold: October, weeks 7–10</div>
+  <div class="moves" style="margin-top:18px">
+    <div class="m"><b>01</b><div><div class="t">Say it, show it, write it</div><p>Every direction in three channels. The board is the third channel — leave it up.</p></div></div>
+    <div class="m g"><b>02</b><div><div class="t">Wait seven seconds</div><p>Ask, then count silently. Silence is translation happening, not refusal. Most teachers wait under two.</p></div></div>
+    <div class="m"><b>03</b><div><div class="t">Frame the sentence</div><p>“I notice ___ because ___.” One frame on the board turns a shrug into an answer.</p></div></div>
+    <div class="m"><b>04</b><div><div class="t">Partner before public</div><p>Every question gets rehearsed with one peer first. Cold‑calling an EL without rehearsal teaches silence.</p></div></div>
+    <div class="m"><b>05</b><div><div class="t">Word wall, used daily</div><p>Ten words for the unit, posted with a picture. Point to it. Say it. Make them say it. Grade it Friday.</p></div></div>
+  </div>
+  <div class="try"><div class="lab mono">This month's move</div><p>Week 7 is Move 02. Pick one class period, ask one real question, and wait the full seven seconds. Write down who answered who never had before.</p></div>
+  <div class="ft mono"><span>Monday Moves · weekly staff card series · 36 weeks</span><span>06</span></div>
+</section>
+
+<!-- ================= V LANGUAGE OF MATH ================= -->
+<section class="page" id="math" data-n="V" data-t="The Language of Math" data-s="The problem is rarely the math.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>Plate V</span></div>
+  <h2>The Language of Math</h2>
+  <p class="sub">The problem is rarely the math. It is the eleven words wrapped around it.</p>
+  <p class="serif" style="font-size:1.45rem;line-height:1.7;color:var(--ink);margin:0 0 10px">A farmer <u style="text-decoration-color:var(--navy)">has</u> <mark style="background:var(--gold);color:var(--deep);padding:0 4px">3 times as many</mark> <u style="text-decoration-color:var(--navy)">chickens</u> <mark style="background:var(--gold);color:var(--deep);padding:0 4px">as</mark> <u style="text-decoration-color:var(--navy)">cows</u>. <mark style="background:var(--gold);color:var(--deep);padding:0 4px">If</mark> there are <u style="text-decoration-color:var(--navy)">48 animals</u> <mark style="background:var(--gold);color:var(--deep);padding:0 4px">altogether</mark>, <mark style="background:var(--gold);color:var(--deep);padding:0 4px">how many</mark> <u style="text-decoration-color:var(--navy)">cows</u> are there?</p>
+  <div class="cap mono"><span style="background:var(--gold);padding:0 6px">&nbsp;</span> signal words — carry the operation &nbsp;&nbsp; <span style="border-bottom:2px solid var(--navy)">&nbsp;&nbsp;&nbsp;&nbsp;</span> content nouns — carry the story</div>
+  <div class="lab mono" style="margin-top:22px">Signal words ELs most often misread · and the operation each one hides</div>
+  <div class="fig" id="sigbars"></div>
+  <div class="cols">
+    <div><div class="lab mono">Why it breaks</div><ul class="n">
+      <li>“Times as many as” reads like three separate words. Spanish speakers hear “veces” but nothing marks the comparison.</li>
+      <li>“If” signals a hypothetical in English. Many students read it as “first.”</li>
+      <li>Small words carry the weight: of, per, than, each. They are the least visible and the most tested.</li></ul></div>
+    <div><div class="lab mono">What works</div><ul class="n">
+      <li>Read the problem aloud once before anyone touches a pencil. Then have students circle the numbers and box the question.</li>
+      <li>Post a signal‑word wall in the math room, with the operation beside each. Add to it every week.</li>
+      <li>Let them explain the plan in Spanish to a partner, then write the equation. The math was never the problem.</li></ul></div>
+  </div>
+  <div class="ft mono"><span>MS CCRS Math · MAAP Algebra I · MTAM read‑aloud applies to math, not ELA reading</span><span>07</span></div>
+</section>
+
+<!-- ================= VI THREE TIERS ================= -->
+<section class="page" id="tiers" data-n="VI" data-t="Three Tiers of Words" data-s="Where to spend your vocabulary minutes.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>Plate VI</span></div>
+  <h2>Three Tiers of Words</h2>
+  <p class="sub">Where to spend your vocabulary minutes. Hint: the middle.</p>
+  <div class="tiers">
+    <div style="flex:34;background:var(--grey)"><span class="mono">Tier 1 · everyday</span><span class="w">table · walk · happy · because</span></div>
+    <div style="flex:40;background:var(--gold);color:var(--deep)"><span class="mono">Tier 2 · academic, cross‑subject</span><span class="w">analyze · evidence · contrast · significant</span></div>
+    <div style="flex:26;background:var(--navy)"><span class="mono">Tier 3 · subject‑specific</span><span class="w">photosynthesis · denominator · Reconstruction</span></div>
+  </div>
+  <div class="cap mono">Width = share of a gen‑ed teacher's vocabulary time that should go to each tier</div>
+  <div class="cols" style="margin-top:22px">
+    <div><div class="lab mono">The argument</div><ul class="n">
+      <li>Tier 1 arrives on its own from friends, TV, and the hallway. Tier 3 you already teach — it is in the unit, bolded, on the test.</li>
+      <li>Tier 2 is the gap. “Evaluate,” “however,” “despite,” “approximately” appear in every class and get taught explicitly in none. ELs stall here for years.</li>
+      <li>A student who knows “photosynthesis” but not “process” cannot answer “Describe the process of photosynthesis.”</li></ul></div>
+    <div><div class="lab mono">Ten for October</div>
+      <p class="serif" style="font-size:1.15rem;color:var(--navy);margin:0 0 10px;line-height:1.5">analyze · evidence · contrast · although · sequence · significant · approximately · however · determine · support</p>
+      <ul class="n"><li>Post them. Use each one aloud three times a day. Require one in every written answer this month. Grade for the attempt, not the spelling.</li></ul></div>
+  </div>
+  <div class="try"><div class="lab mono">Try Tuesday</div><p>Pull your next test. Highlight every Tier 2 word in the directions and question stems. That list is your vocabulary lesson for the week before the test.</p></div>
+  <div class="ft mono"><span>Beck, McKeown &amp; Kucan · MS ELP Standard 8</span><span>08</span></div>
+</section>
+
+<!-- ================= VII FRAMES BANK ================= -->
+<section class="page" id="frames" data-n="VII" data-t="The Frames Bank" data-s="Sentence starters by function and lane.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>Plate VII</span></div>
+  <h2>The Frames Bank</h2>
+  <p class="sub">Sentence starters by function and lane. Cut, post, use.</p>
+  <div style="overflow-x:auto"><table>
+    <tr><th></th><th>Emerging</th><th style="color:var(--gold)">Progressing</th><th>Challenge</th></tr>
+    <tr><td class="f">Describe</td><td>This is a ___. It has ___.</td><td>One ___ of ___ is ___. Another is ___.</td><td>The most notable feature of ___ is ___, which suggests ___.</td></tr>
+    <tr><td class="f">Compare</td><td>___ and ___ are both ___.</td><td>___ is ___, but ___ is ___.</td><td>While ___ and ___ share ___, they differ in ___.</td></tr>
+    <tr><td class="f">Cause / effect</td><td>___ happened because ___.</td><td>Because ___, ___. As a result, ___.</td><td>One consequence of ___ was ___, which in turn led to ___.</td></tr>
+    <tr><td class="f">Sequence</td><td>First ___. Then ___. Last ___.</td><td>Before ___, ___. After that, ___.</td><td>Initially ___; subsequently ___; ultimately ___.</td></tr>
+    <tr><td class="f">Argue</td><td>I think ___ because ___.</td><td>In my opinion ___. The evidence is ___.</td><td>Although some argue ___, the evidence shows ___ because ___.</td></tr>
+  </table></div>
+  <div class="lab mono" style="margin-top:24px">How to use a frame</div>
+  <ul class="n">
+    <li>A frame is scaffolding, not a worksheet. Say it aloud, model one answer, then have partners try it before anyone writes.</li>
+    <li>Newcomers get the Emerging frame plus a word bank. Take frames away one column at a time as the month goes on — the goal is to not need them.</li>
+  </ul>
+  <div class="ft mono"><span>MS ELP Standards 2, 3, 4, 7 · Storm Studio frames library</span><span>09</span></div>
+</section>
+
+<!-- ================= VIII GRADING ================= -->
+<section class="page" id="grading" data-n="VIII" data-t="Grading What They Know" data-s="Separating language from content.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>Plate VIII</span></div>
+  <h2>Grading What They Know</h2>
+  <p class="sub">Separate the language from the content. Then grade the content.</p>
+  <div class="split"><div style="flex:62;background:var(--navy);color:var(--paper)">What the student knows · grade this</div><div style="flex:38;background:var(--gold);color:var(--deep);justify-content:flex-end">How well it was said · coach this</div></div>
+  <div class="cap mono">A science answer with four grammar errors and the right mechanism is a correct science answer</div>
+  <div class="cols" style="margin-top:22px">
+    <div><div class="lab mono">Accommodations you can give today · MTAM‑aligned</div><ul class="n">
+      <li>Extended time — the single most effective and most under‑used accommodation.</li>
+      <li>Bilingual word‑to‑word dictionary (no definitions). Allowed on MAAP; allow it on yours.</li>
+      <li>Directions read aloud and clarified in plain English. Test items read aloud on math and science, not on ELA reading passages.</li>
+      <li>Small‑group or separate setting. Fewer items per page. Answers written directly in the test booklet.</li></ul></div>
+    <div><div class="lab mono">Grading practices that hold up</div><ul class="n">
+      <li>Write two rubric lines: content and language. Weight content. Report both so growth in language is visible too.</li>
+      <li>Accept answers in drawings, labeled diagrams, or Spanish with a partner’s English gloss for newcomers in the first semester.</li>
+      <li>Never a zero for silence. An un‑attempted item for an EL is missing data, not a failing score. Re‑ask it another way.</li>
+      <li>The LSP is the contract. If it says extended time, a grade given without it is not defensible.</li></ul></div>
+  </div>
+  <div class="try"><div class="lab mono">The one question</div><p>Before you enter a grade for an English learner, ask: if this student had written it perfectly in Spanish, what grade would the idea earn? Start there.</p></div>
+  <div class="ft mono"><span>MS Testing Accommodations Manual (MTAM) · LSP · Castañeda prong 2</span><span>10</span></div>
+</section>
+
+<!-- ================= IX COMPLIANCE DESK ================= -->
+<section class="page" id="desk2" data-n="IX" data-t="The Compliance Desk" data-s="October, plotted.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>Plate IX</span></div>
+  <h2>The Compliance Desk</h2>
+  <p class="sub">October, plotted. Thirty‑one days, five Mondays, one date that matters.</p>
+  <div class="fig" id="cal"></div>
+  <div class="cols" style="margin-top:10px">
+    <div><div class="lab mono">On the desk this month</div><ul class="n">
+      <li>Every EL has a current LSP on file and every teacher of record has read it and signed that they did.</li>
+      <li>Accommodations are living in the gradebook and the test settings, not just the cum folder.</li>
+      <li>First‑quarter grades checked against the §15 EL progress pool — a failing EL in October is a May problem you can still fix.</li>
+      <li>Parent notification sent in a language the family can read. Logged. Dated. Copied to the folder.</li></ul></div>
+    <div><div class="lab mono">The framework, in one breath</div><ul class="n">
+      <li>Title III funds the services. EEOA (1974) requires “appropriate action” to overcome language barriers.</li>
+      <li>Castañeda (1981) tests that action three ways: sound theory, adequate resources, actual results.</li>
+      <li>ELPA21 is the annual measure; MS §15 puts EL progress into the school’s accountability grade. Your gradebook is evidence.</li></ul></div>
+  </div>
+  <div class="ft mono"><span>Title III · EEOA · Castañeda v. Pickard · MS Accountability §15 · ELPA21</span><span>11</span></div>
+</section>
+
+<!-- ================= X FAMILY VOICES ================= -->
+<section class="page" id="family" data-n="X" data-t="Family Voices" data-s="Conference season, in two languages.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>Plate X</span></div>
+  <h2>Family Voices</h2>
+  <p class="sub">Conference season, in two languages. What to say across the table.</p>
+  <div class="fig" id="arrows"></div>
+  <div class="pairs">
+    <div class="row mono" style="border-bottom:1.5px solid var(--navy)"><div>English</div><div style="color:var(--gold)">Español</div></div>
+    <div class="row"><div>Thank you for coming. Your child is working hard.</div><div>Gracias por venir. Su hijo/a está trabajando mucho.</div></div>
+    <div class="row"><div>Here is what is going well.</div><div>Esto es lo que va bien.</div></div>
+    <div class="row"><div>Here is one thing we are working on.</div><div>Esto es algo en lo que estamos trabajando.</div></div>
+    <div class="row"><div>What does your child say about school at home?</div><div>¿Qué dice su hijo/a de la escuela en casa?</div></div>
+    <div class="row"><div>What do you want me to know?</div><div>¿Qué quiere que yo sepa?</div></div>
+    <div class="row"><div>How can I reach you? Text, call, or WhatsApp?</div><div>¿Cómo puedo comunicarme con usted? ¿Mensaje, llamada o WhatsApp?</div></div>
+  </div>
+  <div class="lab mono" style="margin-top:24px">Ground rules</div>
+  <ul class="n">
+    <li>Never use the student as the interpreter for their own conference. Ask the office for an interpreter or a phone line; the district is required to provide one.</li>
+    <li>Lead with a strength, in detail. Families of ELs often hear only problems. Bring one piece of work to hand them.</li>
+    <li>Ask, then wait. The second question — “What do you want me to know?” — is where the useful information lives.</li>
+  </ul>
+  <div class="ft mono"><span>Title VI language access · Title III parent notification</span><span>12</span></div>
+</section>
+
+<!-- ================= XI FIRST THIRTY DAYS ================= -->
+<section class="page" id="thirty" data-n="XI" data-t="The First Thirty Days" data-s="A newcomer's month, day by day.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>Plate XI</span></div>
+  <h2>The First Thirty Days</h2>
+  <p class="sub">A newcomer’s month, day by day. What the room owes them, and when.</p>
+  <div class="fig" id="timeline"></div>
+  <div class="cols">
+    <div><div class="lab mono">Week one · safety</div><ul class="n">
+      <li>A seat near the front and beside a bilingual buddy. A printed schedule with room numbers and teacher photos.</li>
+      <li>Twenty survival words and phrases on a card: bathroom, water, help, I don’t understand, please repeat, where is.</li>
+      <li>No grades. Presence, participation by pointing, and one smile a period.</li></ul></div>
+    <div><div class="lab mono">Weeks two–three · routine</div><ul class="n">
+      <li>Every class has one predictable routine the student can do without instructions: bell work, exit ticket, a labeled diagram.</li>
+      <li>First written lines: copying, then a frame. First spoken answer: rehearsed with the buddy, volunteered, never demanded.</li></ul></div>
+  </div>
+  <div class="lab mono" style="margin-top:18px">Week four · evidence</div>
+  <ul class="n">
+    <li>The first graded task uses the Newcomer lane: pictures, word bank, one sentence. It goes in the folder as a baseline you will compare against in December.</li>
+    <li>By day 30 the EL specialist should have the screener score, the LSP drafted, and every teacher’s signature. If any of those is missing, ask.</li>
+  </ul>
+  <div class="ft mono"><span>Storm Studio Newcomer lane · ELPA21 Screener · LSP within 30 days</span><span>13</span></div>
+</section>
+
+<!-- ================= XII GRAMMAR BEATS ================= -->
+<section class="page" id="beats" data-n="XII" data-t="Grammar Beats" data-s="Ritmos de gramática, kept in time.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>Plate XII</span></div>
+  <h2>Grammar Beats</h2>
+  <p class="sub">Ritmos de gramática. A rule you can clap is a rule you keep.</p>
+  <div class="fig" id="staves"></div>
+  <div class="lab mono">October session · Grade 10 · English II · past vs. progressive</div>
+  <p class="big">Walk‑ed, talk‑ed, jump‑ed — past.</p>
+  <p class="big">Walk‑ing, talk‑ing, jump‑ing — now.</p>
+  <p class="it" style="margin:0 0 20px">Clap the clave. Say the rule. Keep the time.</p>
+  <div class="cols">
+    <div><div class="lab mono">Why rhythm</div><ul class="n">
+      <li>Inflections (‑s, ‑ed, ‑ing) are unstressed in English and nearly inaudible to a Spanish‑dominant ear. Putting them on the beat makes them loud.</li>
+      <li>A three‑minute clap‑and‑chant at the start of class is rehearsal for the whole period’s writing.</li></ul></div>
+    <div><div class="lab mono">Run the session</div><ul class="n">
+      <li>1. Teacher claps the clave; class echoes. 2. Add the words on the beat. 3. Students write three sentences using the pattern. 4. Swap papers; circle every inflection.</li>
+      <li>Recorded albums exist for the MAAP‑tested grades (3–8, English II) in <a class="plain" href="https://radan55.github.io/mselablueprintinfo01/">The Blueprint / El Plano</a>.</li></ul></div>
+  </div>
+  <div class="ft mono"><span>Ritmos de gramática, Vol. 1 · The Blueprint / El Plano</span><span>14</span></div>
+</section>
+
+<!-- ================= XIII READABLE ================= -->
+<section class="page" id="readable" data-n="XIII" data-t="Readable: The Fair" data-s="One text, two lanes, three questions.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>Plate XIII</span></div>
+  <h2>Readable: The Fair</h2>
+  <p class="sub">One text, two lanes, three questions. Print this page.</p>
+  <div class="readable">
+    <div><div class="lab mono">Emerging · ELPA21 1–2 · ~80 words</div>
+      <p>Every October, the Mississippi State Fair comes to Jackson. It is big. There are rides, lights, and music. You can smell fried food and sweet funnel cakes. Farmers bring cows, goats, and pigs to show. Students from many schools come on buses. Some students speak English. Some speak Spanish. At the fair, everyone is loud and happy. The fair lasts about twelve days. Then the lights go out until next year.</p></div>
+    <div><div class="lab mono navy">Progressing · ELPA21 3–4 · ~150 words</div>
+      <p>Each October the Mississippi State Fair transforms the fairgrounds in Jackson into a small city of lights. For roughly twelve days, visitors arrive from every county to ride the Ferris wheel, watch livestock competitions, and eat food that exists nowhere else in the calendar. Although the rides draw the crowds, the fair began as an agricultural event, and it still is one: young farmers spend months raising a calf or a goat to show in the ring, and a blue ribbon can mean a scholarship. Schools across the state bring students by the busload. In the crowd you hear English, Spanish, and Vietnamese, sometimes in the same conversation. When the last night ends, the lights are packed into trucks, and the fairgrounds return to quiet until the following fall.</p></div>
+  </div>
+  <div class="qs">
+    <div class="lab mono">Three questions · same questions, both lanes</div>
+    <div class="q1"><b>1</b><div><div class="t">When does the fair happen, and where?</div><div class="g">Emerging: circle the month and the city in the text. Progressing: answer in one full sentence.</div></div></div>
+    <div class="q1"><b>2</b><div><div class="t">Why did the fair begin? Find the sentence that tells you.</div><div class="g">Emerging frame: “The fair began as ___.” Progressing: explain what “still is one” refers to.</div></div></div>
+    <div class="q1"><b>3</b><div><div class="t">The text says the crowd speaks many languages. Why might the writer include that?</div><div class="g">Emerging: choose — a) it is loud &nbsp;b) many kinds of people come &nbsp;c) the food is good. Progressing: two sentences with a reason.</div></div></div>
+  </div>
+  <div class="cap mono">Tier 2 words to pre‑teach: transform · roughly · although · competition · exists · return</div>
+  <div class="ft mono"><span>MS ELP Standard 1 · MS CCRS RI.9‑10.1, RI.9‑10.2 · 187 leveled readables</span><span>15</span></div>
+</section>
+
+<!-- ================= XIV ASK THE SPECIALIST ================= -->
+<section class="page" id="ask" data-n="XIV" data-t="Ask the Specialist" data-s="Four questions from the hallway.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>Plate XIV</span></div>
+  <h2>Ask the Specialist</h2>
+  <p class="sub">Four questions from the hallway, answered before the bell.</p>
+  <div class="qa"><div class="q">“He speaks English fine at lunch. Why is he still an EL?”</div><p>Playground English arrives in one to two years. Academic English — the language of textbooks, tests, and essays — takes five to seven. Social fluency is real and it is not the same skill. ELPA21 measures the second one, and the exit criteria are set by the state, not by how he sounds in the cafeteria.</p></div>
+  <div class="qa"><div class="q">“Can I just let her use Google Translate?”</div><p>For a newcomer reading directions, yes, and it beats sitting lost. For producing her own writing, use it as a bridge, not a destination: she drafts in Spanish, translates, then rewrites the translation in her own words with a frame. Grade the rewrite. The tool should be visibly doing less by December.</p></div>
+  <div class="qa"><div class="q">“She never turns anything in. Is that a language problem or a behavior problem?”</div><p>Before you decide, check three things: can she read the assignment page, does she know when it is due, and has anyone shown her one finished example. Silence and non‑completion are what an unclear task looks like from the outside. Then, if all three are in place, treat it as you would for any student.</p></div>
+  <div class="qa"><div class="q">“I have 28 kids and two ELs. How much am I supposed to do?”</div><p>Nothing separate. The moves in this issue — wait time, frames, three‑channel directions, word walls — are good teaching for all 28. The ELs are the students for whom it stops being optional. Start with one move and keep it for a month.</p></div>
+  <div class="ft mono"><span>Send a question: rdaniel@laurelschools.org</span><span>16</span></div>
+</section>
+
+<!-- ================= XV THE SHELF ================= -->
+<section class="page" id="shelf" data-n="XV" data-t="The Shelf" data-s="Tools you can open today.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>Plate XV</span></div>
+  <h2>The Shelf</h2>
+  <p class="sub">Tools you can open today. All free, all built for Mississippi rooms.</p>
+  <div class="shelf">
+    <div class="it2 live"><div class="t">Many Voices — Student Magazine, Issue 1</div><p>For grades 9–12 ELs. Three reading levels per article, tappable glossary with Spanish, quizzes, a passport.</p><a href="https://radan55.github.io/elstudentmagazine01/">radan55.github.io/elstudentmagazine01/</a></div>
+    <div class="it2 live"><div class="t">The Blueprint / El Plano</div><p>Bilingual EN/ES site on the Mississippi ELA blueprints, K–12: skill ladders, test‑style items, Grammar Beats, family pages.</p><a href="https://radan55.github.io/mselablueprintinfo01/">radan55.github.io/mselablueprintinfo01/</a></div>
+    <div class="it2 live"><div class="t">Reading Check: How Tamales Are Made</div><p>One article, a quiz, a sequencing lab, and a Google Form teacher setup. A model for any content text.</p><a href="https://radan55.github.io/tamales02/">radan55.github.io/tamales02/</a></div>
+    <div class="it2 live"><div class="t">Hispanic Heritage Month Gallery</div><p>Bilingual biographies for the bulletin board and the projector — through October 15.</p><a href="https://radan55.github.io/hispanicheritagemonth2026/">radan55.github.io/hispanicheritagemonth2026/</a></div>
+    <div class="it2"><div class="t">The EL Field Guide</div><p>“Every Teacher Is a Language Teacher.” The pocket version of this magazine.</p><span class="cat">EL Resource Catalog</span></div>
+    <div class="it2"><div class="t">SIOP Model at a Glance</div><p>Eight components, one page. Post it by the lesson‑plan binder.</p><span class="cat">EL Resource Catalog</span></div>
+    <div class="it2"><div class="t">ELPA21 Practice Suite</div><p>Domain‑by‑domain practice in the test’s own format.</p><span class="cat">EL Resource Catalog</span></div>
+    <div class="it2"><div class="t">Monday Moves</div><p>The 36‑week staff card series Plate IV comes from.</p><span class="cat">Staff mailbox, every Monday</span></div>
+  </div>
+  <div class="cap mono" style="margin-top:20px">gold: live on GitHub Pages now · navy: in the EL Resource Catalog or by request</div>
+  <div class="ft mono"><span>The shelf</span><span>17</span></div>
+</section>
+
+<!-- ================= XVI FIELD NOTE ================= -->
+<section class="page dark back" id="note" data-n="XVI" data-t="Field Note" data-s="What the storm is for.">
+  <div class="hd mono"><span>EL Publishing · Vol. I · No. 2</span><span>Plate XVI</span></div>
+  <div class="fig" id="storm" style="max-width:440px;margin:0 auto"></div>
+  <div class="mono" style="color:var(--gold)">Many Voices · One Storm</div>
+  <div class="big2">Every teacher is a language teacher.</div>
+  <div class="it">Nobody should have to figure it out alone.</div>
+  <div class="mono" style="color:var(--dim);margin-top:30px">EL Publishing · radan55.github.io · next plate set: November 2026</div>
+  <div class="ft mono"><span>Field note</span><span>18</span></div>
+</section>
+
+<script>
+(function(){
+const NAVY="#1E2761",DEEP="#111740",GOLD="#C9A227",PAPER="#F5F0E6",GREY="#B9B3A4",MID="#6B74A6",INK="#2A2E3C";
+const svg=(w,h,inner)=>`<svg viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" role="img">${inner}</svg>`;
+let seed=7;const rnd=()=>{seed=(seed*9301+49297)%233280;return seed/233280};
+
+// TOC
+const grid=document.getElementById('tocgrid');
+document.querySelectorAll('section[data-t]').forEach(s=>{
+  const a=document.createElement('a');a.href='#'+s.id;
+  a.innerHTML=`<span class="n">${s.dataset.n}</span><span><span class="t">${s.dataset.t}</span><span class="s">${s.dataset.s}</span></span>`;
+  a.onclick=()=>document.getElementById('toc').classList.remove('open');grid.appendChild(a);
+});
+
+// cover rain
+{let o="";const cols=60,rows=22,cw=780/cols,rh=300/rows;
+ for(let j=0;j<rows;j++)for(let i=0;i<cols;i++){const cx=i*cw+cw/2,cy=j*rh+rh/2,a=.5+.5*Math.sin(i*.28-j*.45),h=2+a*(rh-3);
+   const col=(rnd()<.035&&a>.55)?GOLD:(a<.5?"#3A4478":MID);o+=`<line x1="${cx}" y1="${cy-h/2}" x2="${cx}" y2="${cy+h/2}" stroke="${col}" stroke-width="1"/>`}
+ const vx=41.5*cw;o+=`<line x1="${vx}" y1="${5*rh}" x2="${vx}" y2="${19*rh}" stroke="${GOLD}" stroke-width="2"/><circle cx="${vx}" cy="${5*rh-5}" r="3" fill="${GOLD}"/><text x="${vx+8}" y="${5*rh-2}" font-family="DM Mono,monospace" font-size="8" fill="${GOLD}">STATION 33 · FIRST SENTENCE ALOUD</text>`;
+ document.getElementById('rain').innerHTML=svg(780,300,o)}
+
+// silent period dots
+{let o="";const cols=15,rows=6,cell=780/cols,first=41;
+ for(let d=0;d<90;d++){const i=d%cols,j=Math.floor(d/cols),cx=i*cell+cell/2,cy=j*cell+cell/2,r=3.5+6*(d/89);
+  if(d+1===first)o+=`<circle cx="${cx}" cy="${cy}" r="12" fill="${GOLD}"/>`;
+  else if(d+1<first)o+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${NAVY}" stroke-width=".8"/>`;
+  else o+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${NAVY}"/>`}
+ document.getElementById('dots').innerHTML=svg(780,rows*cell,o)}
+
+// four lanes
+{let o="";const lanes=[["NEWCOMER","arriving",.28,"L1"],["EMERGING","ELPA21 1–2",.48,"L1–2"],["PROGRESSING","ELPA21 3–4",.70,"L3–4"],["CHALLENGE","toward proficient",.92,"L4–5"]];
+ const lw=780/4,top=20,bot=270,n=26;
+ lanes.forEach((L,k)=>{const lx=k*lw;for(let t=0;t<n;t++){const f=t/n,y=bot-f*(bot-top);
+   if(f<=L[2])o+=`<line x1="${lx+12}" y1="${y}" x2="${lx+lw-12}" y2="${y}" stroke="${k===3&&f>L[2]-.08?GOLD:NAVY}" stroke-width="${.6+1.2*f}"/>`;
+   else o+=`<line x1="${lx+lw/2-4}" y1="${y}" x2="${lx+lw/2+4}" y2="${y}" stroke="${GREY}" stroke-width=".4"/>`}
+   o+=`<text x="${lx+12}" y="${bot+18}" font-family="DM Mono,monospace" font-size="9" fill="${NAVY}">${L[0]}</text><text x="${lx+12}" y="${bot+33}" font-family="Fraunces,serif" font-style="italic" font-size="12" fill="${INK}">${L[1]}</text><text x="${lx+lw-12}" y="${bot+18}" text-anchor="end" font-family="DM Mono,monospace" font-size="9" fill="${GREY}">${L[3]}</text>`;
+   if(k)o+=`<line x1="${lx}" y1="${top-6}" x2="${lx}" y2="${bot+36}" stroke="${GREY}" stroke-width=".4"/>`});
+ o+=`<line x1="0" y1="${top-6}" x2="780" y2="${top-6}" stroke="${GOLD}" stroke-width="1"/><text x="780" y="${top-10}" text-anchor="end" font-family="DM Mono,monospace" font-size="8" fill="${GOLD}">PROFICIENT · EXIT</text>`;
+ document.getElementById('lanesfig').innerHTML=svg(780,bot+42,o)}
+
+// radar
+{let o="";const cx=200,cy=200,R=140,ax=["LISTENING","READING","SPEAKING","WRITING"],v=[.85,.7,.45,.35];
+ const pt=(k,r)=>[cx+r*Math.cos(Math.PI/2-k*Math.PI/2),cy-r*Math.sin(Math.PI/2-k*Math.PI/2)];
+ for(let ring=1;ring<=5;ring++){const p=[0,1,2,3].map(k=>pt(k,R*ring/5).join(",")).join(" ");o+=`<polygon points="${p}" fill="none" stroke="${GREY}" stroke-width=".5"/><text x="${cx+4}" y="${cy-R*ring/5+3}" font-family="DM Mono,monospace" font-size="7" fill="${GREY}">L${ring}</text>`}
+ ax.forEach((a,k)=>{const [x,y]=pt(k,R),[tx,ty]=pt(k,R+30);o+=`<line x1="${cx}" y1="${cy}" x2="${x}" y2="${y}" stroke="${GREY}" stroke-width=".5"/><text x="${tx}" y="${ty+3}" text-anchor="middle" font-family="DM Mono,monospace" font-size="9" fill="${NAVY}">${a}</text>`});
+ const pts=v.map((val,k)=>pt(k,R*val));o+=`<polygon points="${pts.map(p=>p.join(",")).join(" ")}" fill="${GOLD}" fill-opacity=".22" stroke="${GOLD}" stroke-width="2"/>`;pts.forEach(p=>o+=`<circle cx="${p[0]}" cy="${p[1]}" r="4" fill="${GOLD}"/>`);
+ document.getElementById('radar').innerHTML=svg(400,400,o)}
+
+// weeks grid
+{let o="";const cols=12,cw=780/cols,ch=40;
+ for(let w=0;w<36;w++){const i=w%cols,j=Math.floor(w/cols),x=i*cw,y=j*ch,n=w+1;
+  let f="none",s=GREY,t=GREY;if(n>=7&&n<=10){f=GOLD;t=DEEP;s="none"}else if(n<7){f=NAVY;t=PAPER;s="none"}
+  o+=`<rect x="${x+3}" y="${y+3}" width="${cw-6}" height="${ch-6}" fill="${f}" stroke="${s}" stroke-width=".6"/><text x="${x+cw/2}" y="${y+ch/2+3}" text-anchor="middle" font-family="DM Mono,monospace" font-size="9" fill="${t}">W${n}</text>`}
+ document.getElementById('weeks').innerHTML=svg(780,3*ch,o)}
+
+// signal bars
+{let o="";const sig=[["times as many as","multiply · then compare",.9],["altogether / in all","add",.8],["how many more than","subtract",.75],["each / per","divide or multiply",.7],["left / remain","subtract",.6],["of  (½ of 40)","multiply",.55],["if … then","condition, not sequence",.5]];
+ sig.forEach((s,k)=>{const y=k*26+14;o+=`<text x="0" y="${y+4}" font-family="Fraunces,serif" font-size="13" fill="${NAVY}">${s[0]}</text><rect x="190" y="${y-5}" width="${s[2]*300}" height="10" fill="${NAVY}"/><text x="${196+s[2]*300}" y="${y+3}" font-family="DM Mono,monospace" font-size="8.5" fill="${INK}">${s[1].toUpperCase()}</text>`});
+ document.getElementById('sigbars').innerHTML=svg(780,26*7+8,o)}
+
+// calendar October 2026 (starts Thursday)
+{let o="";const days=["MON","TUE","WED","THU","FRI","SAT","SUN"],cw=780/7,ch=66,start=3;
+ days.forEach((d,i)=>o+=`<text x="${i*cw+cw/2}" y="10" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="${GREY}">${d}</text>`);
+ o+=`<line x1="0" y1="16" x2="780" y2="16" stroke="${NAVY}" stroke-width="1"/>`;
+ for(let d=1;d<=31;d++){const idx=start+d-1,i=idx%7,j=Math.floor(idx/7),x=i*cw,y=18+j*ch;
+  o+=`<rect x="${x}" y="${y}" width="${cw}" height="${ch}" fill="none" stroke="${GREY}" stroke-width=".4"/>`;
+  if(d===15)o+=`<rect x="${x+2}" y="${y+2}" width="${cw-4}" height="${ch-4}" fill="${GOLD}"/><text x="${x+8}" y="${y+18}" font-family="DM Mono,monospace" font-size="10" fill="${DEEP}">${String(d).padStart(2,"0")}</text><text x="${x+8}" y="${y+ch-10}" font-family="DM Mono,monospace" font-size="7" fill="${DEEP}">HHM CLOSES</text>`;
+  else if(i===0)o+=`<rect x="${x+2}" y="${y+2}" width="${cw-4}" height="${ch-4}" fill="${NAVY}"/><text x="${x+8}" y="${y+18}" font-family="DM Mono,monospace" font-size="10" fill="${PAPER}">${String(d).padStart(2,"0")}</text><text x="${x+8}" y="${y+ch-10}" font-family="DM Mono,monospace" font-size="7" fill="#8A92BF">MONDAY MOVE</text>`;
+  else o+=`<text x="${x+8}" y="${y+18}" font-family="DM Mono,monospace" font-size="10" fill="${NAVY}">${String(d).padStart(2,"0")}</text>`}
+ document.getElementById('cal').innerHTML=svg(780,18+5*ch+2,o)}
+
+// arrows
+{let o="";for(let k=0;k<9;k++){const x=30+k*(720/8),up=k%2===0,c=k===4?GOLD:NAVY,t=up?10:70,s=up?1:-1;
+  o+=`<line x1="${x}" y1="10" x2="${x}" y2="70" stroke="${c}" stroke-width="1.2"/><polyline points="${x-5},${t+6*s} ${x},${t} ${x+5},${t+6*s}" fill="none" stroke="${c}" stroke-width="1.2"/>`}
+ o+=`<text x="0" y="92" font-family="DM Mono,monospace" font-size="8" fill="${GREY}">SCHOOL → HOME</text><text x="780" y="92" text-anchor="end" font-family="DM Mono,monospace" font-size="8" fill="${GOLD}">HOME → SCHOOL · THE DIRECTION MOST CONFERENCES FORGET</text>`;
+ document.getElementById('arrows').innerHTML=svg(780,100,o)}
+
+// timeline
+{let o="";const miles={1:"arrives",3:"buddy assigned",5:"survival words",10:"first routine mastered",15:"first written line",20:"first answer aloud",30:"first graded task"};
+ const ty=70;o+=`<line x1="10" y1="${ty}" x2="770" y2="${ty}" stroke="${NAVY}" stroke-width="1.2"/>`;let idx=0;
+ for(let d=1;d<=30;d++){const x=10+(d-1)*760/29;
+  if(miles[d]){const up=idx%2===0;idx++;const c=(d===1||d===20)?GOLD:NAVY;
+   o+=`<circle cx="${x}" cy="${ty}" r="4.5" fill="${c}"/><line x1="${x}" y1="${ty}" x2="${x}" y2="${up?ty-28:ty+28}" stroke="${GREY}" stroke-width=".6"/><text x="${x}" y="${up?ty-42:ty+52}" text-anchor="middle" font-family="DM Mono,monospace" font-size="7.5" fill="${GREY}">DAY ${String(d).padStart(2,"0")}</text><text x="${x}" y="${up?ty-31:ty+41}" text-anchor="middle" font-family="Fraunces,serif" font-style="italic" font-size="11" fill="${NAVY}">${miles[d]}</text>`}
+  else o+=`<line x1="${x}" y1="${ty-3}" x2="${x}" y2="${ty+3}" stroke="${NAVY}" stroke-width=".6"/>`}
+ document.getElementById('timeline').innerHTML=svg(780,140,o)}
+
+// staves
+{let o="";const rows=[["NOUN",[1,0,0,0,1,0,0,0,1,0,0,0,1,0,0,0]],["VERB",[1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0]],["ADJ",[0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,0]],["-S",[0,0,0,1,0,0,0,1,0,0,0,1,0,0,0,1]],["-ED",[1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1]],["-ING",[1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1]],["CLAVE",[1,0,0,1,0,0,1,0,0,0,1,0,1,0,0,0]]];
+ const sx0=60,sx1=780,gap=32,bw=(sx1-sx0)/16;
+ for(let b=0;b<=16;b+=4)o+=`<text x="${sx0+b*bw}" y="10" text-anchor="middle" font-family="DM Mono,monospace" font-size="8" fill="${GREY}">${b<16?b/4+1:"|"}</text>`;
+ rows.forEach((r,i)=>{const y=26+i*gap;o+=`<line x1="${sx0}" y1="${y}" x2="${sx1}" y2="${y}" stroke="${GREY}" stroke-width=".5"/><text x="0" y="${y+3}" font-family="DM Mono,monospace" font-size="9" fill="${NAVY}">${r[0]}</text>`;
+  r[1].forEach((on,b)=>{const bx=sx0+(b+.5)*bw;if(on)o+=`<circle cx="${bx}" cy="${y}" r="${b%4===0?5.5:4}" fill="${r[0]==="CLAVE"?GOLD:NAVY}"/>`;else o+=`<line x1="${bx}" y1="${y-3}" x2="${bx}" y2="${y+3}" stroke="${GREY}" stroke-width=".5"/>`})});
+ document.getElementById('staves').innerHTML=svg(780,26+7*gap,o)}
+
+// storm
+{let o="";const cx=220,cy=220;for(let ring=1;ring<=14;ring++){const rad=ring*14,n=ring*9;for(let k=0;k<n;k++){const a=2*Math.PI*k/n+ring*.11;o+=`<circle cx="${cx+rad*Math.cos(a)}" cy="${cy+rad*Math.sin(a)}" r="${1.2+.06*ring}" fill="${ring>3?"#4A5390":GOLD}"/>`}}
+ o+=`<circle cx="${cx}" cy="${cy}" r="4.5" fill="${GOLD}"/>`;document.getElementById('storm').innerHTML=svg(440,440,o)}
+})();
+</script>
+</body>
+</html>
